@@ -25,6 +25,12 @@ RUN set -eu ;\
     mv "cargo-binstall" "/usr/bin/cargo-binstall" ;\
     rm -rf "cargo-binstall.tgz"
 
+ADD ./init-ssh.sh /init-ssh.sh
+
+RUN chmod +x /init-ssh.sh ;\
+    /init-ssh.sh ;\
+    rm -rf /init-ssh.sh
+
 USER $USERNAME
 
 RUN pushd /tmp ;\

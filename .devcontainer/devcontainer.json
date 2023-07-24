@@ -1,10 +1,6 @@
 {
   "image": "serdans/metabeedev:latest",
-  "features": {
-    "ghcr.io/devcontainers/features/sshd:1": {
-      "version": "latest"
-    }
-  },
+  "features": {},
   "hostRequirements": {
     "cpus": 3,
     "memory": "8gb",
